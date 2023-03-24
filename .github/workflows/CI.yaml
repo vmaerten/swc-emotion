@@ -1,0 +1,19 @@
+name: Continuous integration
+on:
+  push:
+    tags-ignore: ['*']
+    branches:
+      - '**'
+concurrency:
+  group: environment-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm run test

@@ -1,0 +1,44 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button renders correctly 1`] = `
+<div>
+  <style
+    dangerouslySetInnerHTML={
+      {
+        "__html": ".css-1uhjhvs .ehnzxxk0{color:green;}",
+      }
+    }
+    data-emotion="css 1uhjhvs"
+  />
+  <div
+    className="css-1uhjhvs ehnzxxk1"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        {
+          "__html": ".css-tokvmb{color:red;}",
+        }
+      }
+      data-emotion="css tokvmb"
+    />
+    <div
+      className="css-tokvmb ehnzxxk0"
+    >
+      Green because I am inside a Parent
+    </div>
+  </div>
+  <style
+    dangerouslySetInnerHTML={
+      {
+        "__html": ".css-tokvmb{color:red;}",
+      }
+    }
+    data-emotion="css tokvmb"
+  />
+  <div
+    className="css-tokvmb ehnzxxk0"
+  >
+    Red because I am not inside a Parent
+  </div>
+</div>
+`;

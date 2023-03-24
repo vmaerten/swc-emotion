@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button renders correctly2 1`] = `
+.emotion-0 {
+  right: 34px;
+}
+
+.e16160kb0~.emotion-0 {
+  left: 36px;
+}
+
+.emotion-0 div {
+  top: 42px;
+}
+
+<div>
+  <div
+    className="emotion-0 emotion-1"
+  >
+     I am the parent
+  </div>
+</div>
+`;

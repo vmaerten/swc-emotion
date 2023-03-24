@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button renders correctly 1`] = `
+<div>
+  <div
+    className="css-cfs6co e16160kb1"
+  >
+     I am the parent
+  </div>
+</div>
+`;
